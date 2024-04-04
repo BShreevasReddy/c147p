@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src=" https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+</head>
+
+<body>
+    
+
+  <a-scene>
+    
+    <!-- plane -->
+    <a-plane id="wall-poster-right" src="image.png"  position="-3 5 -10.3" rotation="0 0 0" width="4" height="6" ></a-plane>
+    <a-plane id="wall-poster-right" src="image.png"  position=" 3 5 -10.3" rotation="0 0 0" width="4" height="6" ></a-plane>
+
+    
+    <!-- Light Stand (Cylinder) -->
+    <a-cylinder position="0 3 -3" radius="0.1" height="1" color="gray"></a-cylinder>
+    
+    <!-- Light Bulb (Sphere) -->
+    <a-sphere position="0 2.5 -3" radius="0.3" color="orange"></a-sphere>
+    
+    <!-- Floor -->
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+    
+    <!-- Sky -->
+    <a-sky color="#ECECEC"></a-sky>
+    
+    <!-- Light -->
+    <a-light type="ambient" color="red"></a-light>
+    <a-light type="point" intensity="1" position="2 4 4"></a-light>
+
+    <!-- Table Stand (Cylinder) -->
+    <a-cylinder position="0 0 -5" radius="0.2" height="3" color="brown"></a-cylinder>
+    
+    <!-- Tabletop (Cube) -->
+    <a-box position="0 1.5 -5" width="4" height="0.1" depth="1" color="brown"></a-box>
+
+    <!-- Floor -->
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+
+    <!-- Sky -->
+    <a-sky color="#ECECEC"></a-sky>
+
+    <!-- Chair Leg (Cylinder) -->
+    <a-cylinder position="-1 0 -3" radius="0.1" height="1" color="brown"></a-cylinder>
+    <a-cylinder position="-0.5 0 -3" radius="0.1" height="1" color="brown"></a-cylinder>
+    <a-cylinder position="-1 0 -4" radius="0.1" height="1" color="brown"></a-cylinder>
+    <a-cylinder position="-0.5 0 -4" radius="0.1" height="1" color="brown"></a-cylinder>
+    
+    <!-- Chair Seat (Cuboid) -->
+    <a-box position="-0.7 0.6 -3.1" width="1" height="0.1" depth="1" color="brown"></a-box>
+      
+    <!-- Floor -->
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+    
+    <!-- Sky -->
+    <a-sky color="#ECECEC"></a-sky>
+
+    </a-scene>
+</body>
